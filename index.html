@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREATY CO</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F9F5F1;
+            color: #4E3629;
+            scroll-behavior: smooth;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #8B5A2B;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+        nav a:hover {
+            border-bottom: 2px solid white;
+        }
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: url('images/hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            background-color: #A0522D;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 80px 20px;
+            transition: transform 0.3s ease;
+        }
+        .section:nth-child(even) {
+            background-color: #F7E4D1;
+        }
+        .section:nth-child(odd) {
+            background-color: #F9F5F1;
+        }
+        .section img {
+            max-width: 90%;
+            height: auto;
+            display: block;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            text-align: center;
+            background-color: #4E3629;
+            color: white;
+            padding: 30px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #8B4513;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #A0522D;
+            transform: scale(1.05);
+        }
+        form input, form textarea {
+            width: 90%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        form textarea {
+            resize: vertical;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TREATY CO</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#journey">Cocoa Journey</a>
+        <a href="#sustainability">Sustainability</a>
+        <a href="#products">Our Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Care For Cocoa</h2>
+    <p>Discover the journey of ethically sourced cocoa.</p>
+</section>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>TREATY CO is dedicated to sustainable cocoa sourcing and ethical practices. Our mission is to create a better world, one cocoa bean at a time.</p>
+    <img src="images/about-image.jpg" alt="Cocoa Farms">
+</section>
+
+<section id="journey" class="section">
+    <h2>Our Cocoa Journey</h2>
+    <p>We source our cocoa from Bonny and Calabar, known for their rich cocoa heritage. We ensure ethical practices with no human rights violations since 1999.</p>
+    <img src="images/journey-image.jpg" alt="Cocoa Processing">
+</section>
+
+<section id="sustainability" class="section">
+    
+    <p>Empowering sustainability through direct partnerships with smallholder families, regenerative silvopasture farming, blockchain-tracked sourcing, solar-powered micro hubs, and real-time AI monitoring.</p>
+    <img src="images/sustainability-image.jpg" alt="Sustainability Practices">
+</section>
+
+<section id="products" class="section">
+    <h2>Our Products</h2>
+    <p>Our products are thoughtfully designed with eco-friendly materials and ethical sourcing, ensuring a balance between sustainability and exceptional quality.</p>
+    <img src="images/packaging-image.jpg" alt="Sustainable Products">
+</section>
+</section>
+  
+<section id="testimonials" class="section">
+    <h2>Client Testimonials</h2>
+    <p>What our clients say about us:</p>
+    <div>
+        <img src="images/testimonial-image.jpg" alt="Client Testimonial">
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to learn more? Get in touch!</p>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 TREATY CO. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
